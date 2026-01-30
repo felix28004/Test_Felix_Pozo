@@ -1,0 +1,96 @@
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: rgb(86, 86, 171);
+    color: rgb(4, 2, 58);
+}
+
+.contenedor-principal{
+
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Barra de Progreso */
+.barra-progreso-fondo {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.barra-progreso-relleno {
+    height: 100%;
+    background-color: #3498db;
+    width: 0%; /* Se actualiza con JS */
+    transition: width 0.3s ease;
+}
+
+/* Botones de Respuesta */
+.opciones-grid {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-opcion {
+    padding: 15px;
+    border: 2px solid #3498db;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.btn-opcion:hover:not(:disabled) {
+    background-color: #e8f4fc;
+}
+
+/* Estados de Acierto/Error */
+.correcto {
+    background-color: #2ecc71 !important; /* Verde */
+    color: white !important;
+    border-color: #27ae60 !important;
+}
+
+.incorrecto {
+    background-color: #e74c3c !important; /* Rojo */
+    color: white !important;
+    border-color: #c0392b !important;
+}
+
+
+/* Feedback y Navegación */
+.feedback {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+#btn-siguiente, .btn-reiniciar {
+    padding: 10px 25px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Ocultar los resultados hasta el final*/
+.oculto {
+    display: none !important;
+}

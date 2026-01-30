@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivial</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
-    <h1>Trivial sobre Videojuegos</h1>
+    <h1>Quiz sobre Videojuegos</h1>
+    <h2>10 preguntas sobre los 10 hitos de los videojuegos</h2>
+
+    <main class="contenedor-principal">
+        
+        <div id="juego-container">
+            <div class="cabecera-quiz">
+                <div class="info-progreso">
+                    <span id="texto-progreso">Pregunta 1 de 10</span>
+                </div>
+
+
+                <div class="barra-progreso-fondo">
+                    <div id="barra-progreso" class="barra-progreso-relleno"></div>
+                </div>
+            </div>
+
+            <h2 id="pregunta">Cargando pregunta...</h2>
+
+            <div id="opciones-container" class="opciones-grid">
+                </div>
+
+            <div id="feedback" class="feedback oculto">
+                <p id="feedback-texto"></p>
+                <button id="btn-siguiente" onclick="siguientePregunta()">Siguiente Pregunta</button>
+            </div>
+        </div>
+
+        <div id="resultados-container" class="oculto">
+            <h2>¡Quiz Terminado!</h2>
+            <div class="resultado-caja">
+                <p>Tu puntuación final:</p>
+                <h1 id="puntuacion-final">0 de 10</h1>
+                <p id="porcentaje">0%</p>
+                <hr>
+                <p id="mensaje-resultado" class="mensaje-personalizado">Mensaje</p>
+            </div>
+
+
+            <button class="btn-reiniciar" onclick="reiniciarJuego()">Reiniciar Test</button>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
 
 
 </body>
