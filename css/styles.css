@@ -2,26 +2,32 @@ body{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: rgb(86, 86, 171);
-    color: rgb(4, 2, 58);
+    background-color: rgb(146, 86, 171);
+    color: rgb(19, 1, 27);
+
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
 }
 
 .contenedor-principal{
-
-    background-color: white;
+ 
     width: 90%;
     max-width: 600px;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgb(0, 0, 0);
     text-align: center;
+    margin-bottom: 4%;
 }
 
 /* Barra de Progreso */
 .barra-progreso-fondo {
     width: 100%;
     height: 10px;
-    background-color: #e0e0e0;
+    background-color: rgb(68, 254, 127);
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -30,7 +36,7 @@ body{
 
 .barra-progreso-relleno {
     height: 100%;
-    background-color: #3498db;
+    background-color: rgb(6, 209, 81);
     width: 0%; /* Se actualiza con JS */
     transition: width 0.3s ease;
 }
@@ -44,8 +50,8 @@ body{
 
 .btn-opcion {
     padding: 15px;
-    border: 2px solid #3498db;
-    background-color: white;
+    border: 2px solid  rgb(147, 6, 207);
+    background-color: rgb(233, 197, 249);
     color: #333;
     border-radius: 8px;
     cursor: pointer;
@@ -54,7 +60,7 @@ body{
 }
 
 .btn-opcion:hover:not(:disabled) {
-    background-color: #e8f4fc;
+    background-color:  rgb(216, 153, 244);
 }
 
 /* Estados de Acierto/Error */
@@ -90,7 +96,7 @@ body{
     margin-top: 10px;
 }
 
-/* Ocultar los resultados hasta el final*/
+/* Ocultar el resto de resutlatados hasta el final*/
 .oculto {
     display: none !important;
 }
