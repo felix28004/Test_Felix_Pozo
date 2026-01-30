@@ -27,7 +27,7 @@ body{
 .barra-progreso-fondo {
     width: 100%;
     height: 10px;
-    background-color: rgb(68, 254, 127);
+    background-color: rgb(68, 192, 254);
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -36,7 +36,7 @@ body{
 
 .barra-progreso-relleno {
     height: 100%;
-    background-color: rgb(6, 209, 81);
+    background-color: rgb(6, 168, 209);
     width: 0%; /* Se actualiza con JS */
     transition: width 0.3s ease;
 }
@@ -65,9 +65,9 @@ body{
 
 /* Estados de Acierto/Error */
 .correcto {
-    background-color: #2ecc71 !important; /* Verde */
+    background-color: #2ecc3b !important; /* Verde */
     color: white !important;
-    border-color: #27ae60 !important;
+    border-color: #27ae3d !important;
 }
 
 .incorrecto {
@@ -82,12 +82,12 @@ body{
     margin-top: 20px;
     padding: 15px;
     border-radius: 8px;
-    background-color: #f8f9fa;
+    background-color:  rgb(217, 158, 242);
 }
 
 #btn-siguiente, .btn-reiniciar {
     padding: 10px 25px;
-    background-color: #34495e;
+    background-color: rgb(17, 91, 219);
     color: white;
     border: none;
     border-radius: 5px;
